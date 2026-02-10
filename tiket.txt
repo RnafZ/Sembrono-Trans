@@ -1,0 +1,4 @@
+ST001|Regan|Jakarta|Semarang|06.30 --> 13.45|Executive|2D
+ST002|Azfar|Solo|Bekasi|23.35 --> 07.50|Suite|SA1
+ST003|Rusdi|Bekasi|Malang|07.00 --> 20.20|Executive|4D
+ST004|Amba|Bekasi|Ngawi|13.00 --> 13.30|Executive|1A,1B,1C
