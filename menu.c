@@ -34,11 +34,6 @@ void menuPesanTiket() {
     Tiket *tiket = malloc(sizeof(Tiket));
     int jumlah_kursi;
 
-    if (tiket == NULL) {
-        puts("Gagal alokasi memori");
-        return;
-    }
-
     puts("\n=== Silahkan isi data dibawah ===");
     printf("Nama pemesan: ");
     fgets(tiket->nama_pemesan, 30, stdin);
@@ -68,6 +63,7 @@ void menuPesanTiket() {
 
     case -1:
         puts("Mengembalikan ke Menu Utama");
+        free(tiket);
         return;
     }
 
@@ -79,7 +75,7 @@ void menuPesanTiket() {
 void menuCariPesanan() {
     Tiket *tiket = malloc(sizeof(Tiket));
     char kode[6];
-    
+
     printf("Masukkan kode pesananmu: ");
     scanf("%s", kode);
 
@@ -162,4 +158,5 @@ void pilihTujuan(char *tujuan) {
         }
         puts("Input tidak valid!");
     }
+
 }
